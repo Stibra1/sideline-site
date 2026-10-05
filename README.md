@@ -4,7 +4,7 @@ Static site for https://sideline.no (GitHub Pages, custom domain). Plain HTML/CS
 
 | Path | Content |
 |---|---|
-| `/` · `/en/` | Landing page (NB · EN): Sideline wordmark over a photo hero, three app cards with App Store badges |
+| `/` · `/en/` | Landing page (NB · EN): Sideline wordmark over a photo hero, four app cards with App Store badges (Insights, Handball, Football, Basketball) |
 | `/support/` · `/support/en/` | Sideline: Insights support |
 | `/privacy/` · `/privacy/en/` | Sideline: Insights privacy policy |
 | `/handball/support/` · `/handball/support/en/` | Sideline: Håndball support |
@@ -24,3 +24,6 @@ Badges are official Apple artwork from Apple Marketing Tools (`assets/badges/app
 `/b/` and `/b/en/` redirect to `/` and `/en/`.
 
 Photos: `assets/photos/*-{800,1600}.{webp,jpg}` (WebP with JPEG fallback).
+
+
+`data-app="basketball"` on the landing badges is still `href="#"` until Sideline: Basketball is live on the App Store.
