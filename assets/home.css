@@ -38,3 +38,4 @@ img{display:block;max-width:100%;height:auto}
  .v2 .bg img{transform:none;object-position:47% 40%;opacity:.75}
  .v2 .hero-bg .bg::after{background:linear-gradient(180deg,#000 0%,rgba(0,0,0,0) 22%,rgba(0,0,0,0) 72%,#000 100%)}
 }
+.foot .org{margin-top:4px;font-size:12px}
