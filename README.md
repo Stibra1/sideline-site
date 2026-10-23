@@ -4,7 +4,7 @@ Static site for https://sideline.no (GitHub Pages, custom domain). Plain HTML/CS
 
 | Path | Content |
 |---|---|
-| `/` · `/en/` | Landing page (NB · EN): Sideline wordmark over a photo hero, four app cards with App Store badges (Insights, Handball, Football, Basketball) |
+| `/` · `/en/` | Landing page (NB · EN): Sideline wordmark over a photo hero, a feature card for Sideline: Spons (the main offering, links to spons.sideline.no; animated illustration `assets/img/spons-{nb,en}.svg` from `tools/make_spons_art.py`), then four app cards with App Store badges (Insights, Handball, Football, Basketball) |
 | `/support/` · `/support/en/` | Support for all Sideline apps |
 | `/privacy/` · `/privacy/en/` | Privacy policy for all Sideline apps |
 | `/handball/support/…`, `/handball/privacy/…`, `/handball/` | Redirect to the shared pages |
