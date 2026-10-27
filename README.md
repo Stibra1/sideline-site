@@ -15,7 +15,7 @@ Contact: support@sideline.no
 
 The badges are the `<a class="badge" data-app="...">` elements in `index.html` and `en/index.html`:
 
-- `spons`: https://apps.apple.com/no/app/sideline-spons/id6824289338 (Spons block; English page without /no/)
+- `spons`: https://apps.apple.com/no/app/sideline-spons/id6824289338 (Spons block; English page without /no/) and Google Play https://play.google.com/store/apps/details?id=no.braastad.sideline.spons
 - `insights`: https://apps.apple.com/no/app/sideline-insights/id6818266063
 - `handball`: https://apps.apple.com/no/app/sideline-handball/id6817756823
 - `football`: https://apps.apple.com/no/app/sideline-football/id6816678735
