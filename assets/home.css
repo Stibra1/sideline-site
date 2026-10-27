@@ -51,6 +51,11 @@ img{display:block;max-width:100%;height:auto}
 .btn:hover,.btn:focus-visible{background:#FF7a26;transform:translateY(-1px)}
 .btn.ghost{background:transparent;color:#F5F5F3;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.3)}
 .btn.ghost:hover,.btn.ghost:focus-visible{background:rgba(255,255,255,.06)}
+.spons-store{margin:16px 0 0}
 .spons-note{margin:16px 0 0;color:#8E8E8A;font-size:14px}
 .spons-art img{width:100%;height:auto}
 @media(max-width:900px){.spons{grid-template-columns:1fr;text-align:left;width:calc(100% - 32px);padding:28px 22px 12px;border-radius:28px}.spons-art{order:-1;margin:-8px -10px 0}}
+.spons-lead a{color:#F5F5F3;text-decoration:underline;text-decoration-color:rgba(255,97,0,.7);text-underline-offset:3px}.spons-lead a:hover{color:#FF8A45}
+.spons-topics{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 0;padding:0;list-style:none}
+.spons-topics a{display:inline-block;padding:7px 14px;border-radius:999px;border:1px solid rgba(255,138,69,.35);color:#FF8A45;font-size:14px;font-weight:650}
+.spons-topics a:hover,.spons-topics a:focus-visible{background:rgba(255,97,0,.12)}
