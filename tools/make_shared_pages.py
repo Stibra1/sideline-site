@@ -13,7 +13,7 @@ from __future__ import annotations
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-UPDATED = {"nb": "8. oktober 2026", "en": "8 October 2026"}
+UPDATED = {"nb": "30. oktober 2026", "en": "30 October 2026"}
 
 LOGO = ('<svg class="logo" viewBox="0 0 48 32" width="48" height="32" '
         'aria-hidden="true" focusable="false"><g fill="none" stroke="#FF6100" '
@@ -65,9 +65,11 @@ T = {
                      "Handball, Insights, Basketball og Playbook.",
         coming="Kommer snart", store="App Store",
         updated="Sist oppdatert",
-        copyright="© 2026 Stian Braastad",
-        no_cookies="Denne siden bruker ingen informasjonskapsler, sporing "
-                   "eller analyseverktøy.",
+        copyright="© 2026 Braastad Software og App Utvikling",
+        org="Org.nr. 938 698 503 · Brokvollveien 12, 3032 Drammen",
+        no_cookies="Nettsiden bruker informasjonskapsler fra Google Ads bare "
+                   "hvis du godtar det. <a href=\"#\" data-consent-settings>"
+                   "Endre valg</a>",
         footer_other="English",
     ),
     "en": dict(
@@ -82,8 +84,10 @@ T = {
                      "Insights, Basketball and Playbook.",
         coming="Coming soon", store="App Store",
         updated="Last updated",
-        copyright="© 2026 Stian Braastad",
-        no_cookies="This site uses no cookies, tracking or analytics.",
+        copyright="© 2026 Braastad Software og App Utvikling",
+        org="Org. no. 938 698 503 · Brokvollveien 12, 3032 Drammen, Norway",
+        no_cookies="This site uses Google Ads cookies only if you accept. "
+                   "<a href=\"#\" data-consent-settings>Change choice</a>",
         footer_other="Norsk",
     ),
 }
@@ -121,8 +125,10 @@ PRIVACY = {
 <p>Hvis du sender en e-post til <a href="mailto:support@sideline.no">support@sideline.no</a>, bruker jeg e-postadressen din og innholdet i meldingen bare til å svare deg. E-posten slettes når saken er avsluttet, med mindre du ønsker noe annet. Behandlingsgrunnlaget er berettiget interesse i å svare på henvendelsen (personvernforordningen art. 6 nr. 1 bokstav f).</p>
 <h2>10. Dine rettigheter</h2>
 <p>Etter personvernregelverket (GDPR) har du blant annet rett til innsyn, retting og sletting. Fordi utvikleren ikke har tilgang til dataene i appene, utøver du disse rettighetene direkte i appen eller ved å slette den. For henvendelser som gjelder e-post du har sendt, kontakt <a href="mailto:support@sideline.no">support@sideline.no</a>. Du kan klage til Datatilsynet (<a href="https://www.datatilsynet.no">www.datatilsynet.no</a>).</p>
-<h2>11. Nettsiden</h2>
-<p>Denne nettsiden er publisert med GitHub Pages. GitHub registrerer IP-adressen til besøkende av sikkerhetshensyn, i henhold til GitHubs personvernerklæring. Nettsiden bruker ikke egne informasjonskapsler (cookies), sporing eller analyseverktøy, og laster ingen eksterne skrifttyper.</p>
+<h2 id="nettsiden">11. Nettsiden</h2>
+<p>Denne nettsiden er publisert med GitHub Pages. GitHub registrerer IP-adressen til besøkende av sikkerhetshensyn, i henhold til GitHubs personvernerklæring. Nettsiden laster ingen eksterne skrifttyper.</p>
+<p>Nettsiden bruker Google-taggen (Google Ads) for å måle hvordan annonsene våre for Sideline virker, for eksempel om noen kom hit fra en annonse. Første gang du besøker siden, spør vi om du godtar informasjonskapsler fra Google Ads. Før du har svart, og hvis du avslår, settes ingen slike informasjonskapsler; Google mottar da bare tekniske signaler uten informasjonskapsler (Googles samtykkemodus). Godtar du, kan Google sette informasjonskapsler og behandle IP-adresse og opplysninger om nettleseren og besøket ditt, i henhold til Googles personvernerklæring (<a href="https://policies.google.com/privacy">policies.google.com/privacy</a>). Opplysningene kan overføres til USA, med grunnlag i EUs standardkontrakter og EU–US Data Privacy Framework. Behandlingsgrunnlaget er samtykket ditt (personvernforordningen art. 6 nr. 1 bokstav a). Valget lagres i nettleseren din, og du kan når som helst <a href="#" data-consent-settings>endre valget</a>.</p>
+<p>Appene inneholder ikke Google-taggen eller annen sporing.</p>
 <h2>12. Endringer</h2>
 <p>Hvis en app endres slik at den behandler opplysninger på en annen måte, oppdateres denne erklæringen før endringen tas i bruk, og datoen øverst endres.</p>
 <h2>Kontakt</h2>
@@ -161,8 +167,10 @@ PRIVACY = {
 <p>If you email <a href="mailto:support@sideline.no">support@sideline.no</a>, I use your email address and message only to reply to you. The email is deleted once the matter is closed, unless you ask otherwise. The legal basis is legitimate interest in answering your enquiry (GDPR Article 6(1)(f)).</p>
 <h2>10. Your rights</h2>
 <p>Under data protection law (GDPR) you have rights including access, rectification and erasure. Because the developer has no access to the data in the apps, you exercise these rights directly in the app or by deleting it. For questions about email you have sent, contact <a href="mailto:support@sideline.no">support@sideline.no</a>. You can complain to the Norwegian Data Protection Authority, Datatilsynet (<a href="https://www.datatilsynet.no">www.datatilsynet.no</a>).</p>
-<h2>11. This website</h2>
-<p>This website is published with GitHub Pages. GitHub logs visitors' IP addresses for security purposes, under GitHub's privacy statement. The website sets no cookies of its own, uses no tracking or analytics, and loads no external fonts.</p>
+<h2 id="website">11. This website</h2>
+<p>This website is published with GitHub Pages. GitHub logs visitors' IP addresses for security purposes, under GitHub's privacy statement. The website loads no external fonts.</p>
+<p>The website uses the Google tag (Google Ads) to measure how our ads for Sideline perform, for example whether someone arrived from an ad. On your first visit, we ask whether you accept Google Ads cookies. Until you answer, and if you decline, no such cookies are set; Google then only receives cookieless technical signals (Google Consent Mode). If you accept, Google may set cookies and process your IP address and information about your browser and visit, under Google's privacy policy (<a href="https://policies.google.com/privacy">policies.google.com/privacy</a>). The data may be transferred to the USA, on the basis of the EU standard contractual clauses and the EU–US Data Privacy Framework. The legal basis is your consent (GDPR art. 6(1)(a)). Your choice is stored in your browser, and you can <a href="#" data-consent-settings>change it</a> at any time.</p>
+<p>The apps do not contain the Google tag or any other tracking.</p>
 <h2>12. Changes</h2>
 <p>If an app changes how it handles information, this policy is updated before the change takes effect, and the date at the top changes.</p>
 <h2>Contact</h2>
@@ -233,6 +241,7 @@ def head(lang, kind, title, desc):
 <html lang="{lang}">
 <head>
 <meta charset="utf-8">
+<script src="/assets/consent.js"></script>
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>{title}</title>
 <meta name="description" content="{desc}">
@@ -281,6 +290,7 @@ def foot(lang, kind):
 <footer><div class="wrap">
 <nav><a href="{'/' if lang == 'nb' else '/en/'}">Sideline</a><a href="{url('support', lang)}">{t['support']}</a><a href="{url('privacy', lang)}">{t['privacy']}</a><a href="{url(kind, t['other'])}" hreflang="{t['other']}">{t['footer_other']}</a></nav>
 <p>{t['copyright']}</p>
+<p class="org">{t['org']}</p>
 <p>{t['no_cookies']}</p>
 </div></footer>
 </body>
@@ -331,7 +341,8 @@ def support(lang):
 
 
 def redirect(target, title):
-    return (f'<!doctype html><html><head><meta charset="utf-8"><title>{title}</title>'
+    return (f'<!doctype html><html><head><meta charset="utf-8">'
+            f'<script src="/assets/consent.js"></script><title>{title}</title>'
             f'<meta name="robots" content="noindex">'
             f'<meta http-equiv="refresh" content="0; url={target}">'
             f'<link rel="canonical" href="https://sideline.no{target}"></head>'
