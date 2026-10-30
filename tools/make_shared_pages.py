@@ -242,6 +242,7 @@ def head(lang, kind, title, desc):
 <head>
 <meta charset="utf-8">
 <script src="/assets/consent.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18545227066"></script>
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>{title}</title>
 <meta name="description" content="{desc}">
@@ -342,7 +343,8 @@ def support(lang):
 
 def redirect(target, title):
     return (f'<!doctype html><html><head><meta charset="utf-8">'
-            f'<script src="/assets/consent.js"></script><title>{title}</title>'
+            f'<script src="/assets/consent.js"></script>'
+            f'<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18545227066"></script><title>{title}</title>'
             f'<meta name="robots" content="noindex">'
             f'<meta http-equiv="refresh" content="0; url={target}">'
             f'<link rel="canonical" href="https://sideline.no{target}"></head>'
