@@ -1,6 +1,6 @@
 # sideline.no
 
-Static site for https://sideline.no (GitHub Pages, custom domain). Plain HTML/CSS, no build step, no trackers, no external fonts.
+Static site for https://sideline.no (GitHub Pages, custom domain). Plain HTML/CSS, no build step, no external fonts. Google tag (Google Ads AW-18545227066) with a consent banner: `assets/consent.js`, included high in every page's `<head>` (Consent Mode v2, nothing set before Accept; only runs on sideline.no).
 
 | Path | Content |
 |---|---|
