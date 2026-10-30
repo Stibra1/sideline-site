@@ -26,10 +26,7 @@
   gtag("js", new Date());
   gtag("config", ID);
 
-  var s = d.createElement("script");
-  s.async = true;
-  s.src = "https://www.googletagmanager.com/gtag/js?id=" + ID;
-  d.head.appendChild(s);
+  // gtag.js itself is the async <script> right after this one in every page's <head>.
 
   var nb = (d.documentElement.lang || "").indexOf("en") !== 0;
   var T = nb ? {
