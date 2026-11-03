@@ -55,7 +55,13 @@ img{display:block;max-width:100%;height:auto}
 .badge--gp img{height:65px;margin:-7px 0}
 .spons-note{margin:16px 0 0;color:#8E8E8A;font-size:14px}
 .spons-art img{width:100%;height:auto}
-@media(max-width:900px){.spons{grid-template-columns:1fr;text-align:left;width:calc(100% - 32px);padding:28px 22px 12px;border-radius:28px}.spons-art{order:-1;margin:-8px -10px 0}}
+/* The 45-second how-to film in a phone frame (Norwegian page); starts muted, sound via the controls */
+.spons-video{margin:0;display:flex;flex-direction:column;align-items:center;gap:16px}
+.spons-phone{width:min(300px,100%);aspect-ratio:9/16;padding:8px;border-radius:42px;background:#0d0d0d;box-shadow:0 0 0 1px #2a1607,0 24px 60px rgba(0,0,0,.55),0 0 90px rgba(255,97,0,.2)}
+.spons-phone video{display:block;width:100%;height:100%;object-fit:cover;border-radius:34px;background:#F3F2EE}
+.spons-video figcaption{color:#8E8E8A;font-size:14px;line-height:1.5;text-align:center;max-width:24em}
+.spons-video figcaption a{color:#FF8A45;font-weight:700;text-decoration:underline;text-underline-offset:3px}
+@media(max-width:900px){.spons{grid-template-columns:1fr;text-align:left;width:calc(100% - 32px);padding:28px 22px 12px;border-radius:28px}.spons-art{order:-1;margin:-8px -10px 0}.spons-video{margin:12px 0 20px}.spons-phone{width:min(280px,82%)}}
 .spons-lead a{color:#F5F5F3;text-decoration:underline;text-decoration-color:rgba(255,97,0,.7);text-underline-offset:3px}.spons-lead a:hover{color:#FF8A45}
 .spons-topics{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 0;padding:0;list-style:none}
 .spons-topics a{display:inline-block;padding:7px 14px;border-radius:999px;border:1px solid rgba(255,138,69,.35);color:#FF8A45;font-size:14px;font-weight:650}
