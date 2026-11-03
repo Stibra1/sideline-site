@@ -29,6 +29,15 @@ img{display:block;max-width:100%;height:auto}
 .v2 .wordmark{text-shadow:0 4px 30px rgba(0,0,0,.6),0 1px 3px rgba(0,0,0,.5)}
 .v2 .tag{color:#E2E2DE;text-shadow:0 1px 3px rgba(0,0,0,.95),0 2px 16px rgba(0,0,0,.9)}
 .v2 .lower{flex:1;background:#000;padding:clamp(16px,3vw,40px) 0 0}
+/* The Spons block right under the headline, over the lower part of the photo (Nov 2026) */
+@media(min-width:821px){
+ .v2 .hero-bg{height:auto;overflow:visible;padding-bottom:clamp(36px,4vw,56px)}
+ .v2 .bg{bottom:auto;height:clamp(560px,52vw,760px)}
+ .v2 .lower{background:transparent;padding-top:0}
+}
+@media(max-width:820px){
+ .v2 .lower{position:relative;margin-top:calc(min(118vw,520px) * -.42);background:transparent;padding-top:0}
+}
 .v2 .app{padding:22px 18px 26px;border-radius:30px;background:linear-gradient(180deg,#0d0d0d,#080808);border:1px solid #181818}
 @media(max-width:820px){
  .v2 .hero-bg{height:auto;min-height:0;text-align:center;display:flex;flex-direction:column}
