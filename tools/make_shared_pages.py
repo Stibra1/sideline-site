@@ -12,6 +12,8 @@ from __future__ import annotations
 
 from pathlib import Path
 
+from site_frame import FONT_PRELOAD, footer as site_footer, header as site_header, modern_head
+
 ROOT = Path(__file__).resolve().parents[1]
 UPDATED = {"nb": "30. oktober 2026", "en": "30 October 2026"}
 
@@ -65,7 +67,7 @@ T = {
                      "Handball, Insights, Basketball og Playbook.",
         coming="Kommer snart", store="App Store",
         updated="Sist oppdatert",
-        copyright="© 2026 Braastad Software og App Utvikling",
+        copyright="© 2026 Braastad Software &amp; App Utvikling",
         org="Org.nr. 938 698 503 · Brokvollveien 12, 3032 Drammen",
         no_cookies="Nettsiden bruker informasjonskapsler fra Google Ads bare "
                    "hvis du godtar det. <a href=\"#\" data-consent-settings>"
@@ -84,7 +86,7 @@ T = {
                      "Insights, Basketball and Playbook.",
         coming="Coming soon", store="App Store",
         updated="Last updated",
-        copyright="© 2026 Braastad Software og App Utvikling",
+        copyright="© 2026 Braastad Software &amp; App Utvikling",
         org="Org. no. 938 698 503 · Brokvollveien 12, 3032 Drammen, Norway",
         no_cookies="This site uses Google Ads cookies only if you accept. "
                    "<a href=\"#\" data-consent-settings>Change choice</a>",
@@ -237,7 +239,7 @@ def head(lang, kind, title, desc):
     canonical = f"https://sideline.no{url(kind, lang)}"
     locale = "nb_NO" if lang == "nb" else "en_GB"
     alt_locale = "en_GB" if lang == "nb" else "nb_NO"
-    return f"""<!doctype html>
+    return modern_head(f"""<!doctype html>
 <html lang="{lang}">
 <head>
 <meta charset="utf-8">
@@ -271,29 +273,20 @@ def head(lang, kind, title, desc):
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="stylesheet" href="/assets/style.css">
+<link rel="stylesheet" href="/assets/site.css">
+""" + FONT_PRELOAD + """
 </head>
-<body>
-<header><div class="wrap bar">
-<a class="brand" href="{'/' if lang == 'nb' else '/en/'}">{LOGO}<span>Sideline</span></a>
-<div class="right"><nav class="links" aria-label="{t['menu']}"><a href="{url('support', lang)}">{t['support']}</a><a href="{url('privacy', lang)}">{t['privacy']}</a></nav>
-<nav class="lang" aria-label="{t['langs']}">""" + (
-        f"<span>{t['here_label']}</span><a href=\"{url(kind, t['other'])}\" hreflang=\"{t['other']}\" lang=\"{t['other']}\">{t['other_label']}</a>"
-        if lang == "nb" else
-        f"<a href=\"{url(kind, t['other'])}\" hreflang=\"{t['other']}\" lang=\"{t['other']}\">{t['other_label']}</a><span>{t['here_label']}</span>"
-    ) + """</nav></div>
-</div></header>
-<main class="wrap">"""
+<body class="site">
+""" + site_header(lang, url(kind, lang), url(kind, t['other'])) + """
+<main class="wrap" id="innhold" tabindex="-1">""")
 
 
 def foot(lang, kind):
     t = T[lang]
-    return f"""</main>
-<footer><div class="wrap">
-<nav><a href="{'/' if lang == 'nb' else '/en/'}">Sideline</a><a href="{url('support', lang)}">{t['support']}</a><a href="{url('privacy', lang)}">{t['privacy']}</a><a href="{url(kind, t['other'])}" hreflang="{t['other']}">{t['footer_other']}</a></nav>
-<p>{t['copyright']}</p>
-<p class="org">{t['org']}</p>
-<p>{t['no_cookies']}</p>
-</div></footer>
+    return f"""
+<p class="wrap" style="color:var(--color-muted);font-size:14px">{t['no_cookies']}</p>
+</main>
+""" + site_footer(lang, url(kind, lang), url(kind, t['other'])) + """
 </body>
 </html>
 """
