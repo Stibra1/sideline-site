@@ -7,8 +7,9 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Personvernerklæring – Sideline-appene</title>
 <meta name="description" content="Personvern i Sideline-appene: ingen konto, ingen sporing og ingen reklame. Alt lagres kun på din iPhone, og ingenting sendes til utvikleren.">
-<meta name="theme-color" content="#000000">
-<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#F3F2EE" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
 <meta name="referrer" content="no-referrer">
 <link rel="canonical" href="https://sideline.no/privacy/">
 <link rel="alternate" hreflang="nb" href="https://sideline.no/privacy/">
@@ -32,14 +33,31 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="stylesheet" href="/assets/style.css">
+<link rel="stylesheet" href="/assets/site.css">
+<link rel="preload" href="/assets/fonts/plus-jakarta-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/oswald-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 </head>
-<body>
-<header><div class="wrap bar">
-<a class="brand" href="/"><svg class="logo" viewBox="0 0 48 32" width="48" height="32" aria-hidden="true" focusable="false"><g fill="none" stroke="#FF6100" stroke-width="1.4" stroke-linejoin="round"><rect x="1.5" y="1.5" width="45" height="29" rx="3"/><line x1="24" y1="1.5" x2="24" y2="30.5"/><circle cx="24" cy="16" r="5"/></g><g fill="#FF6100"><rect x="8" y="18" width="3" height="7" rx=".6"/><rect x="13" y="13" width="3" height="12" rx=".6"/><rect x="33" y="15" width="3" height="10" rx=".6"/><rect x="38" y="9" width="3" height="16" rx=".6"/></g></svg><span>Sideline</span></a>
-<div class="right"><nav class="links" aria-label="Meny"><a href="/support/">Støtte</a><a href="/privacy/">Personvern</a></nav>
-<nav class="lang" aria-label="Språk"><span>NO</span><a href="/privacy/en/" hreflang="en" lang="en">EN</a></nav></div>
+<body class="site">
+<a class="skiplink" href="#innhold">Hopp til innhold</a>
+<header class="sitebar"><div class="sitebar__inner">
+<a class="mark" href="/"><span class="mark__sideline">Sideline</span></a>
+<nav class="sitebar__nav" aria-label="Hovedmeny"><ul><li><a href="https://spons.sideline.no">Spons</a></li><li><a href="/#apper">Appene</a></li><li><a href="/#om">Om oss</a></li><li><a href="/support/">Støtte</a></li></ul></nav>
+<div class="sitebar__end">
+<a class="sitebar__text" href="https://spons.sideline.no/bli-med">Har du lagkode?</a>
+<a class="sitebar__text" href="https://spons.sideline.no/login">Logg inn</a>
+<a class="btn btn--primary sitebar__cta" href="https://spons.sideline.no/new">Prøv Spons gratis</a>
+<button type="button" class="sitebar__menu" aria-expanded="false" aria-controls="sitemenu" aria-label="Meny" data-menu-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+</div>
 </div></header>
-<main class="wrap">
+<div class="sitemenu" id="sitemenu-wrap" hidden>
+<div class="sitemenu__panel" id="sitemenu" role="dialog" aria-modal="true" aria-label="Meny">
+<div class="sitemenu__head"><a class="mark" href="/"><span class="mark__sideline">Sideline</span></a><button type="button" class="sitebar__menu" aria-label="Lukk meny" data-menu-close><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+<nav aria-label="Hovedmeny"><ul class="sitemenu__list"><li><a href="https://spons.sideline.no">Spons</a></li><li><a href="/#apper">Appene</a></li><li><a href="/#om">Om oss</a></li><li><a href="/support/">Støtte</a></li><li><a href="https://spons.sideline.no/bli-med">Har du lagkode?</a></li><li><a href="https://spons.sideline.no/login">Logg inn</a></li></ul></nav>
+<a class="btn btn--primary btn--block" href="https://spons.sideline.no/new">Prøv Spons gratis</a>
+<div class="sitemenu__lang"><nav class="langs" aria-label="Språk"><span>Norsk</span><a href="/privacy/en/" hreflang="en" lang="en">English</a></nav></div>
+</div>
+</div>
+<main class="wrap" id="innhold" tabindex="-1">
 <section class="hero policy"><p class="eyebrow">Personvern</p><h1>Personvernerklæring for Sideline-appene</h1><p class="meta">Sist oppdatert: 30. oktober 2026</p></section>
 <div class="card summary policy"><p style="margin:0"><strong>Kort fortalt:</strong> Ingen av Sideline-appene samler inn personopplysninger. Alt lagres kun på enheten din, og ingenting sendes til utvikleren.</p></div>
 <article class="policy">
@@ -80,12 +98,21 @@
 <h2>Kontakt</h2>
 <p>Stian Braastad, <a href="mailto:support@sideline.no">support@sideline.no</a></p>
 </article>
+
+<p class="wrap" style="color:var(--color-muted);font-size:14px">Nettsiden bruker informasjonskapsler fra Google Ads bare hvis du godtar det. <a href="#" data-consent-settings>Endre valg</a></p>
 </main>
-<footer><div class="wrap">
-<nav><a href="/">Sideline</a><a href="/support/">Støtte</a><a href="/privacy/">Personvern</a><a href="/privacy/en/" hreflang="en">English</a></nav>
-<p>© 2026 Braastad Software og App Utvikling</p>
-<p class="org">Org.nr. 938 698 503 · Brokvollveien 12, 3032 Drammen</p>
-<p>Nettsiden bruker informasjonskapsler fra Google Ads bare hvis du godtar det. <a href="#" data-consent-settings>Endre valg</a></p>
-</div></footer>
+<footer class="sitefoot">
+<div class="sitefoot__grid">
+<div class="sitefoot__brand"><a class="mark" href="/"><span class="mark__sideline">Sideline</span></a><p>Apper for trenere, lagledere og foreldre. Fra benken til lagkassa.</p></div>
+<nav class="sitefoot__col" aria-label="Sideline Spons"><h2 class="sitefoot__title">Sideline Spons</h2><ul><li><a href="https://spons.sideline.no/slik-fungerer-det">Slik fungerer det</a></li><li><a href="https://spons.sideline.no/pris">Pris</a></li><li><a href="https://spons.sideline.no/bli-med">Har du lagkode?</a></li><li><a href="https://spons.sideline.no/spons-og-vipps">Spons og Vipps</a></li></ul></nav>
+<nav class="sitefoot__col" aria-label="Apper"><h2 class="sitefoot__title">Apper</h2><ul><li><a href="https://apps.apple.com/no/app/id6818266063">Sideline: Insights</a></li><li><a href="https://apps.apple.com/no/app/id6816678735">Sideline: Football</a></li><li><a href="https://apps.apple.com/no/app/id6817756823">Sideline: Handball</a></li><li><a href="https://apps.apple.com/no/app/id6819058783">Sideline: Basketball</a></li></ul></nav>
+<nav class="sitefoot__col" aria-label="Sideline"><h2 class="sitefoot__title">Sideline</h2><ul><li><a href="/support/">Støtte</a></li><li><a href="/privacy/">Personvern</a></li><li><a href="mailto:support@sideline.no">Kontakt</a></li><li><a href="#" data-consent-settings>Informasjonskapsler</a></li></ul></nav>
+</div>
+<div class="sitefoot__bottom">
+<nav class="langs" aria-label="Språk"><span>Norsk</span><a href="/privacy/en/" hreflang="en" lang="en">English</a></nav>
+<p>© 2026 Braastad Software &amp; App Utvikling · Org.nr. 938 698 503 · Brokvollveien 12, 3032 Drammen · <a href="mailto:support@sideline.no">support@sideline.no</a></p>
+</div>
+</footer>
+<script src="/assets/site.js" defer></script>
 </body>
 </html>

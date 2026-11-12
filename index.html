@@ -7,14 +7,15 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Sideline – apper for trenere, lagledere og foreldre</title>
 <meta name="description" content="Kamptavle, laguttak, bytter, spilletid og statistikk for fotball, håndball og basketball. Apper for trenere og foreldre – og Sideline: Spons for lagkassa.">
-<meta name="theme-color" content="#000000">
-<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#F3F2EE" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
 <meta name="referrer" content="no-referrer">
 <link rel="canonical" href="https://sideline.no/">
 <link rel="alternate" hreflang="nb" href="https://sideline.no/">
 <link rel="alternate" hreflang="en" href="https://sideline.no/en/">
 <link rel="alternate" hreflang="x-default" href="https://sideline.no/">
-<meta name="apple-itunes-app" content="app-id=6818266063">
+<meta name="apple-itunes-app" content="app-id=6824289338">
 <meta property="og:site_name" content="Sideline">
 <meta property="og:title" content="Sideline – apper for trenere, lagledere og foreldre">
 <meta property="og:description" content="Kamptavle, laguttak, bytter, spilletid og statistikk for fotball, håndball og basketball. Apper for trenere og foreldre – og Sideline: Spons for lagkassa.">
@@ -168,63 +169,109 @@
  ]
 }
 </script>
-<link rel="stylesheet" href="/assets/home.css">
+
+<link rel="preload" href="/assets/fonts/plus-jakarta-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/oswald-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/site.css">
 </head>
-<body class="home v2">
-<header class="mast hero-bg">
-<div class="bg" aria-hidden="true"><picture><source type="image/webp" srcset="/assets/photos/team-sideline-800.webp 800w, /assets/photos/team-sideline-1600.webp 1600w" sizes="100vw"><img class="" src="/assets/photos/team-sideline-800.jpg" srcset="/assets/photos/team-sideline-800.jpg 800w, /assets/photos/team-sideline-1600.jpg 1600w" sizes="100vw" width="2210" height="900" alt="Jentelag i Sideline-drakter foran fotballmålet"></picture></div>
-<div class="hero-text">
-<h1 class="wordmark">Sideline<span class="vh"> – apper for trenere, lagledere og foreldre</span></h1>
-<p class="tag">Apper for trenere, lagledere og foreldre.</p>
+<body class="site">
+<a class="skiplink" href="#innhold">Hopp til innhold</a>
+<header class="sitebar"><div class="sitebar__inner">
+<a class="mark" href="/"><span class="mark__sideline">Sideline</span></a>
+<nav class="sitebar__nav" aria-label="Hovedmeny"><ul><li><a href="https://spons.sideline.no">Spons</a></li><li><a href="/#apper">Appene</a></li><li><a href="/#om">Om oss</a></li><li><a href="/support/">Støtte</a></li></ul></nav>
+<div class="sitebar__end">
+<a class="sitebar__text" href="https://spons.sideline.no/bli-med">Har du lagkode?</a>
+<a class="sitebar__text" href="https://spons.sideline.no/login">Logg inn</a>
+<a class="btn btn--primary sitebar__cta" href="https://spons.sideline.no/new">Prøv Spons gratis</a>
+<button type="button" class="sitebar__menu" aria-expanded="false" aria-controls="sitemenu" aria-label="Meny" data-menu-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
 </div>
-</header>
-<div class="lower">
-<section class="spons" aria-labelledby="spons-h">
-<div class="spons-text">
-<p class="spons-kicker"><span>Nytt fra Sideline</span>Sideline: Spons</p>
-<h2 id="spons-h">Hvert mål gir penger i lagkassa.</h2>
-<p class="spons-lead"><a href="https://spons.sideline.no/malspons">Målspons</a> og <a href="https://spons.sideline.no/digital-dugnad">digital dugnad</a> for idrettslaget. Familie og venner velger selv beløp per mål, per seier og når laget holder nullen. Spons regner ut og minner på, og pengene går rett til laget, aldri via oss.</p>
-<div class="spons-cta"><a class="btn" href="https://spons.sideline.no/" data-app="spons">Prøv Spons gratis <span aria-hidden="true">→</span></a><a class="btn ghost" href="https://spons.sideline.no/pris">Se priser</a></div>
-<p class="spons-store"><a class="badge" href="https://apps.apple.com/no/app/sideline-spons/id6824289338" data-app="spons"><img src="/assets/badges/app-store-nb.svg" width="150" height="50" alt="Last ned i App Store"></a><a class="badge badge--gp" href="https://play.google.com/store/apps/details?id=no.braastad.sideline.spons&amp;hl=no" data-app="spons"><img src="/assets/badges/google-play-nb.png" width="168" height="65" alt="Last ned på Google Play"></a></p>
-<p class="spons-note">iPhone, Android og nett</p>
-<ul class="spons-topics" aria-label="Les mer om Spons"><li><a href="https://spons.sideline.no/malspons">Målspons for idrettslag</a></li><li><a href="https://spons.sideline.no/alternativ-til-dugnad">Alternativ til dugnad</a></li><li><a href="https://spons.sideline.no/digital-dugnad">Digital dugnad</a></li></ul>
+</div></header>
+<div class="sitemenu" id="sitemenu-wrap" hidden>
+<div class="sitemenu__panel" id="sitemenu" role="dialog" aria-modal="true" aria-label="Meny">
+<div class="sitemenu__head"><a class="mark" href="/"><span class="mark__sideline">Sideline</span></a><button type="button" class="sitebar__menu" aria-label="Lukk meny" data-menu-close><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+<nav aria-label="Hovedmeny"><ul class="sitemenu__list"><li><a href="https://spons.sideline.no">Spons</a></li><li><a href="/#apper">Appene</a></li><li><a href="/#om">Om oss</a></li><li><a href="/support/">Støtte</a></li><li><a href="https://spons.sideline.no/bli-med">Har du lagkode?</a></li><li><a href="https://spons.sideline.no/login">Logg inn</a></li></ul></nav>
+<a class="btn btn--primary btn--block" href="https://spons.sideline.no/new">Prøv Spons gratis</a>
+<div class="sitemenu__lang"><nav class="langs" aria-label="Språk"><span>Norsk</span><a href="/en/" hreflang="en" lang="en">English</a></nav></div>
 </div>
-<figure class="spons-video">
-<div class="spons-phone"><video src="/assets/video/spons-howto-nb.mp4" poster="/assets/video/spons-howto-nb.jpg" width="720" height="1280" autoplay muted loop playsinline controls preload="metadata" aria-label="Slik kommer laget i gang med Spons, film på 45 sekunder"></video></div>
+</div>
+<main id="innhold" tabindex="-1">
+<section class="hero" aria-labelledby="hero-title">
+<picture class="hero__photo"><source type="image/webp" srcset="/assets/photos/team-sideline-800.webp 800w, /assets/photos/team-sideline-1600.webp 1600w" sizes="100vw"><img src="/assets/photos/team-sideline-800.jpg" width="2210" height="900" alt="Jentelag i Sideline-drakter foran fotballmålet" fetchpriority="high"></picture>
+<div class="hero__inner">
+<div>
+<p class="hero__kicker">Sideline</p>
+<h1 id="hero-title" class="hero__title">Apper for trenere, lagledere og foreldre</h1>
+<p class="hero__lead">Nyest fra oss er Sideline Spons: familie og venner sponser hvert mål, og pengene går rett til lagkassa.</p>
+<a class="btn btn--primary btn--lg hero__cta" href="https://spons.sideline.no/new">Prøv Spons gratis</a>
+<p class="hero__note">30 dager gratis · Ingen kort</p>
+<p class="hero__more"><a href="#apper">Se alle appene fra Sideline ↓</a></p>
+</div>
+<div class="hero__visual"><div class="phone"><img src="/assets/img/spons-home-nb.webp" width="540" height="1108" alt="Lagets side i Spons-appen: det laget har samlet inn, hva du skal betale og betalingsknappen" fetchpriority="high"></div></div>
+</div>
+</section>
+<ul class="trust" aria-label="Om Sideline"><li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="6" width="17" height="12" rx="2"/><path d="M3.5 10h17M7 14.5h3"/></svg><span>Vipps rett til lagkassa</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4.5 6v5.5c0 4.6 3.2 8.4 7.5 9.5 4.3-1.1 7.5-4.9 7.5-9.5V6z"/><path d="m8.8 12 2.2 2.2 4.4-4.4"/></svg><span>Braastad Software &amp; App Utvikling, org.nr. 938 698 503</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2.2"/><path d="M11 18.5h2"/></svg><span>iPhone, Android og nett</span></li></ul>
+<div class="home">
+<section class="spons" aria-labelledby="spons-title">
+<div>
+<p class="kicker">Sideline Spons</p>
+<h2 id="spons-title" class="section-title">Hvert mål gir penger i lagkassa</h2>
+<p class="section-lead">Målspons og digital dugnad for idrettslaget. Familie og venner velger selv beløp per mål, per seier og når laget holder nullen. Spons regner ut og minner på, og pengene går rett til laget, aldri via oss.</p>
+<ol class="steps"><li><span class="steps__n" aria-hidden="true">1</span><h3>Laget opprettes på 5 min</h3><p>Laglederen eller dugnadsansvarlig oppretter Sponsen i appen eller på nett, legger inn kampene og deler lagkoden.</p></li><li><span class="steps__n" aria-hidden="true">2</span><h3>Familie og venner velger kr per mål</h3><p>Hver støttespiller velger beløp per mål, seier eller holdt null, med et maksbeløp så ingen får overraskelser.</p></li><li><span class="steps__n" aria-hidden="true">3</span><h3>Vipps etter kampen</h3><p>Laglederen legger inn resultatet. Alle får varsel om hva de skal gi, og betaler rett til lagkassa med Vipps.</p></li></ol>
+<div class="spons__actions" style="margin-top:24px"><a class="btn btn--primary" href="https://spons.sideline.no/new">Prøv Spons gratis</a><a class="btn btn--ghost" href="https://spons.sideline.no/pris">Se priser</a><a class="homelink" href="https://spons.sideline.no/slik-fungerer-det">Slik fungerer det →</a></div>
+<p class="badges" style="margin-top:18px"><a class="badge" href="https://apps.apple.com/no/app/id6824289338"><img src="/assets/badges/app-store-nb.svg" width="150" height="50" alt="Last ned i App Store" loading="lazy"></a><a class="badge gp" href="https://play.google.com/store/apps/details?id=no.braastad.sideline.spons&amp;hl=no"><img src="/assets/badges/google-play-nb.png" width="168" height="65" alt="Last ned på Google Play" loading="lazy"></a></p>
+<ul class="topics" style="margin-top:14px" aria-label="Les mer om Spons"><li><a href="https://spons.sideline.no/malspons">Målspons for idrettslag</a></li><li><a href="https://spons.sideline.no/alternativ-til-dugnad">Alternativ til dugnad</a></li><li><a href="https://spons.sideline.no/digital-dugnad">Digital dugnad</a></li></ul>
+<div style="margin-top:28px"><div class="vipps"><img src="/assets/img/vipps-paymark.svg" width="104" height="65" alt="Vipps">
+<div><h3>Betal med Vipps – rett til lagkassa</h3><p>Sideline Spons er godkjent Vipps-partner. Supporterne trykker «Betal» i appen og betaler med Vipps rett til lagets Vipps boks. Sideline rører aldri pengene.</p><p><a class="homelink" href="https://spons.sideline.no/spons-og-vipps">Les om Spons og Vipps →</a></p></div></div></div>
+</div>
+<figure class="spons__film">
+<div class="phone"><video src="/assets/video/spons-howto-nb.mp4" poster="/assets/video/spons-howto-nb.jpg" width="720" height="1280" autoplay muted loop playsinline controls preload="metadata" aria-label="Slik kommer laget i gang med Spons, film på 45 sekunder"></video></div>
 <figcaption>Ta kontakt og vi hjelper deg med å komme i gang: <a href="mailto:support@sideline.no">support@sideline.no</a></figcaption>
 </figure>
 </section>
-<main class="apps4">
-<article class="app">
-<img class="shot" src="/assets/img/nb-football_overview.jpg" width="600" height="1298" alt="Skjermbilde fra Sideline: Insights: spillerkort med heatmap over skudd på fotballbanen">
-<h2>Sideline: Insights</h2>
-<p>Kampstatistikk og heatmaps for fotball og håndball.</p>
-<a class="badge" href="https://apps.apple.com/no/app/sideline-insights/id6818266063" data-app="insights"><img src="/assets/badges/app-store-nb.svg" width="150" height="50" alt="Last ned i App Store"></a>
-</article>
-<article class="app">
-<img class="shot" src="/assets/img/nb-handball_app.jpg" width="600" height="1298" alt="Skjermbilde fra Sideline: Handball: håndballbane med spillere, kampklokke og benk under kamp">
-<h2>Sideline: Handball</h2>
-<p>Kamptavle for håndball: laguttak, bytter og spilletid.</p>
-<a class="badge" href="https://apps.apple.com/no/app/sideline-handball/id6817756823" data-app="handball"><img src="/assets/badges/app-store-nb.svg" width="150" height="50" alt="Last ned i App Store"></a>
-</article>
-<article class="app">
-<img class="shot" src="/assets/img/nb-football_app.jpg" width="600" height="1298" alt="Skjermbilde fra Sideline: Football: fotballbane med laguttak, kampklokke og benk under kamp">
-<h2>Sideline: Football</h2>
-<p>Kamptavle for fotball: laguttak, bytter og spilletid.</p>
-<a class="badge" href="https://apps.apple.com/no/app/sideline-football/id6816678735" data-app="football"><img src="/assets/badges/app-store-nb.svg" width="150" height="50" alt="Last ned i App Store"></a>
-</article>
-
-<article class="app">
-<img class="shot" src="/assets/img/nb-basketball_app.jpg" width="600" height="1298" alt="Skjermbilde fra Sideline: Basketball: heatmap over skudd på basketballbanen">
-<h2>Sideline: Basketball</h2>
-<p>Skudd, fouls og spillerstatistikk for basketballtrenere.</p>
-<a class="badge" href="https://apps.apple.com/no/app/sideline-basketball/id6819058783" data-app="basketball"><img src="/assets/badges/app-store-nb.svg" width="150" height="50" alt="Last ned i App Store"></a>
-</article>
-</main></div>
-<footer class="foot">
-<nav><a href="/support/">Støtte</a><a href="/privacy/">Personvern</a><a href="mailto:support@sideline.no">support@sideline.no</a><a href="#" data-consent-settings>Informasjonskapsler</a><a href="/en/" hreflang="en">English</a></nav>
-<p>© 2026 Braastad Software og App Utvikling</p>
-<p class="org">Org.nr. 938 698 503 · Brokvollveien 12, 3032 Drammen</p>
+<section id="apper" aria-labelledby="apps-title">
+<h2 id="apps-title" class="section-title">Flere apper fra Sideline</h2>
+<p class="section-lead">Vi lager også apper for treneren på sidelinjen: kamptavle, laguttak, bytter, spilletid og statistikk.</p>
+<div class="apps"><article class="app">
+<img class="app__shot" src="/assets/img/nb-football_overview.jpg" width="600" height="1298" alt="Spillerkort med heatmap over skudd på fotballbanen" loading="lazy">
+<div><h3>Sideline: Insights</h3><p>Kampstatistikk og heatmaps for fotball og håndball.</p>
+<p class="badges"><a class="badge" href="https://apps.apple.com/no/app/id6818266063"><img src="/assets/badges/app-store-nb.svg" width="150" height="50" alt="Last ned i App Store" loading="lazy"></a></p></div>
+</article><article class="app">
+<img class="app__shot" src="/assets/img/nb-football_app.jpg" width="600" height="1298" alt="Fotballbane med laguttak, kampklokke og benk" loading="lazy">
+<div><h3>Sideline: Football</h3><p>Kamptavle for fotball: laguttak, bytter og spilletid.</p>
+<p class="badges"><a class="badge" href="https://apps.apple.com/no/app/id6816678735"><img src="/assets/badges/app-store-nb.svg" width="150" height="50" alt="Last ned i App Store" loading="lazy"></a></p></div>
+</article><article class="app">
+<img class="app__shot" src="/assets/img/nb-handball_app.jpg" width="600" height="1298" alt="Håndballbane med spillere, kampklokke og benk" loading="lazy">
+<div><h3>Sideline: Handball</h3><p>Kamptavle for håndball: laguttak, bytter og spilletid.</p>
+<p class="badges"><a class="badge" href="https://apps.apple.com/no/app/id6817756823"><img src="/assets/badges/app-store-nb.svg" width="150" height="50" alt="Last ned i App Store" loading="lazy"></a></p></div>
+</article><article class="app">
+<img class="app__shot" src="/assets/img/nb-basketball_app.jpg" width="600" height="1298" alt="Heatmap over skudd på basketballbanen" loading="lazy">
+<div><h3>Sideline: Basketball</h3><p>Skudd, fouls og spillerstatistikk for basketballtrenere.</p>
+<p class="badges"><a class="badge" href="https://apps.apple.com/no/app/id6819058783"><img src="/assets/badges/app-store-nb.svg" width="150" height="50" alt="Last ned i App Store" loading="lazy"></a></p></div>
+</article></div>
+</section>
+<section id="om" class="about" aria-labelledby="about-title">
+<h2 id="about-title" class="section-title">Om Sideline</h2>
+<p>Sideline lages av Braastad Software &amp; App Utvikling i Drammen. Appene utvikles og driftes av Stian Braastad, en ivrig fotball- og håndballpappa som lager det han selv savnet på sidelinjen.</p><p>Spørsmål eller ønsker? Skriv til <a href="mailto:support@sideline.no">support@sideline.no</a>, så svarer vi.</p>
+</section>
+<section class="finalcta" aria-labelledby="final-title">
+<h2 id="final-title">Klar for en enklere dugnad?</h2>
+<p>Opprett laget i Spons på noen minutter. 30 dager gratis, ingen kort.</p>
+<a class="btn btn--primary btn--lg" href="https://spons.sideline.no/new">Prøv Spons gratis</a>
+</section>
+</div>
+</main>
+<footer class="sitefoot">
+<div class="sitefoot__grid">
+<div class="sitefoot__brand"><a class="mark" href="/"><span class="mark__sideline">Sideline</span></a><p>Apper for trenere, lagledere og foreldre. Fra benken til lagkassa.</p></div>
+<nav class="sitefoot__col" aria-label="Sideline Spons"><h2 class="sitefoot__title">Sideline Spons</h2><ul><li><a href="https://spons.sideline.no/slik-fungerer-det">Slik fungerer det</a></li><li><a href="https://spons.sideline.no/pris">Pris</a></li><li><a href="https://spons.sideline.no/bli-med">Har du lagkode?</a></li><li><a href="https://spons.sideline.no/spons-og-vipps">Spons og Vipps</a></li></ul></nav>
+<nav class="sitefoot__col" aria-label="Apper"><h2 class="sitefoot__title">Apper</h2><ul><li><a href="https://apps.apple.com/no/app/id6818266063">Sideline: Insights</a></li><li><a href="https://apps.apple.com/no/app/id6816678735">Sideline: Football</a></li><li><a href="https://apps.apple.com/no/app/id6817756823">Sideline: Handball</a></li><li><a href="https://apps.apple.com/no/app/id6819058783">Sideline: Basketball</a></li></ul></nav>
+<nav class="sitefoot__col" aria-label="Sideline"><h2 class="sitefoot__title">Sideline</h2><ul><li><a href="/support/">Støtte</a></li><li><a href="/privacy/">Personvern</a></li><li><a href="mailto:support@sideline.no">Kontakt</a></li><li><a href="#" data-consent-settings>Informasjonskapsler</a></li></ul></nav>
+</div>
+<div class="sitefoot__bottom">
+<nav class="langs" aria-label="Språk"><span>Norsk</span><a href="/en/" hreflang="en" lang="en">English</a></nav>
+<p>© 2026 Braastad Software &amp; App Utvikling · Org.nr. 938 698 503 · Brokvollveien 12, 3032 Drammen · <a href="mailto:support@sideline.no">support@sideline.no</a></p>
+</div>
 </footer>
+<script src="/assets/site.js" defer></script>
 </body>
 </html>
