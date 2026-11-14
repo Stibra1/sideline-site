@@ -1,0 +1,25 @@
+name: IndexNow
+
+# After a change to sideline.no goes live (GitHub Pages builds main), tell IndexNow (Bing and others)
+# that the pages in the sitemap may have changed. Google does not use IndexNow: Search Console as before.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: indexnow
+  cancel-in-progress: true
+
+jobs:
+  indexnow:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Wait for GitHub Pages
+        run: sleep 90
+      - name: Send the sitemap to IndexNow
+        run: tools/indexnow.sh sideline.no
