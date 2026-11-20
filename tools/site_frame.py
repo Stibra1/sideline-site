@@ -17,6 +17,7 @@ APP_STORE = {
     "handball": "6817756823",
     "football": "6816678735",
     "basketball": "6819058783",
+    "playbook": "6820581905",
 }
 GOOGLE_PLAY_SPONS = "https://play.google.com/store/apps/details?id=no.braastad.sideline.spons"
 
@@ -113,7 +114,7 @@ def footer(lang: str, here: str, there: str) -> str:
     spons = [(t["spons_how"], t["how"]), (t["spons_price"], t["pricing"]), (t["spons_join"], t["have_code"])]
     if t["spons_vipps"]:
         spons.append((t["spons_vipps"], t["vipps"]))
-    apps = [(app_store(a, lang), f"Sideline: {a.capitalize()}") for a in ("insights", "football", "handball", "basketball")]
+    apps = [(app_store(a, lang), f"Sideline: {a.capitalize()}") for a in ("insights", "football", "handball", "basketball", "playbook")]
     support = "/support/" if lang == "nb" else "/support/en/"
     privacy = "/privacy/" if lang == "nb" else "/privacy/en/"
     company = [(support, t["support"]), (privacy, t["privacy"]), ("mailto:support@sideline.no", t["contact"])]

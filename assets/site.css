@@ -190,6 +190,9 @@ html.menu-open, html.menu-open body { overflow: hidden; }
 /* The other apps */
 .apps { display: grid; gap: 16px; }
 .app { display: grid; grid-template-columns: 96px 1fr; gap: 16px; align-items: start; padding: 18px; border: 1px solid var(--color-line); border-radius: 22px; background: var(--color-card); }
+/* The text column runs to the card's foot, with the store badge last, so every badge sits at the same height. */
+.app > div { display: flex; flex-direction: column; height: 100%; }
+.app > div .badges { margin-top: auto; }
 .app__shot { width: 96px; border-radius: 16px; border: 1px solid var(--color-line); }
 .app h3 { margin: 0 0 4px; font-size: 19px; }
 .app p { margin: 0 0 12px; color: var(--color-text-body); font-size: 15px; }
@@ -198,9 +201,10 @@ html.menu-open, html.menu-open body { overflow: hidden; }
   .apps { grid-template-columns: repeat(2, 1fr); }
 }
 @media (min-width: 1024px) {
-  .apps { grid-template-columns: repeat(4, 1fr); }
-  .app { grid-template-columns: 1fr; text-align: left; }
-  .app__shot { width: 100%; max-width: 200px; margin: 0 auto 6px; border-radius: 22px; }
+  .apps { grid-template-columns: repeat(5, 1fr); gap: 14px; }
+  .app { grid-template-columns: 1fr; grid-template-rows: auto 1fr; text-align: left; padding: 14px; }
+  .app__shot { width: 100%; max-width: 200px; aspect-ratio: 600 / 1298; object-fit: cover; margin: 0 auto 6px; border-radius: 22px; }
+  .app h3 { font-size: 17px; }
 }
 
 /* About */

@@ -4,7 +4,7 @@ Static site for https://sideline.no (GitHub Pages, custom domain). Plain HTML/CS
 
 | Path | Content |
 |---|---|
-| `/` · `/en/` | Front page (NB · EN): photo hero with one message and «Prøv Spons gratis», a trust strip, Sideline Spons in depth (three steps, the 45-second film on the NB page, store badges, the Vipps band in NB), the other apps (Insights, Football, Handball, Basketball), about, a last call. Everything about Spons links to spons.sideline.no |
+| `/` · `/en/` | Front page (NB · EN): photo hero with one message and «Prøv Spons gratis», a trust strip, Sideline Spons in depth (three steps, the 45-second film on the NB page, store badges, the Vipps band in NB), the other apps (Insights, Football, Handball, Basketball, Playbook), about, a last call. Everything about Spons links to spons.sideline.no |
 | `/support/` · `/support/en/` | Support for all Sideline apps |
 | `/privacy/` · `/privacy/en/` | Privacy policy for all Sideline apps |
 | `/handball/support/…`, `/handball/privacy/…`, `/handball/` | Redirect to the shared pages |
@@ -19,6 +19,8 @@ The badges are the `<a class="badge" data-app="...">` elements in `index.html` a
 - `insights`: https://apps.apple.com/no/app/sideline-insights/id6818266063
 - `handball`: https://apps.apple.com/no/app/sideline-handball/id6817756823
 - `football`: https://apps.apple.com/no/app/sideline-football/id6816678735
+- `basketball`: https://apps.apple.com/no/app/sideline-basketball/id6819058783
+- `playbook`: https://apps.apple.com/no/app/sideline-playbook/id6820581905 (free; card image from the app's 1.0.4 store screenshots, 04-drill)
 
 Badges are official Apple artwork from Apple Marketing Tools (`assets/badges/app-store-nb.svg` = NO, `app-store-en.svg` = US/UK).
 `/b/` and `/b/en/` redirect to `/` and `/en/`.
@@ -26,4 +28,4 @@ Badges are official Apple artwork from Apple Marketing Tools (`assets/badges/app
 Photos: `assets/photos/*-{800,1600}.{webp,jpg}` (WebP with JPEG fallback).
 
 
-`data-app="basketball"` on the landing badges is still `href="#"` until Sideline: Basketball is live on the App Store.
+On wide screens the five app cards stand in one row; the text column runs to the card's foot so every badge sits at the same height.
