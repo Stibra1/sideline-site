@@ -240,10 +240,6 @@ body.site .app-card p, body.site .faq .card p, body.site .lead { color: var(--co
 body.site .eyebrow { color: var(--color-accent-text); }
 body.site main.wrap h1, body.site main.wrap h2, body.site main.wrap h3 { color: var(--color-text); }
 
-/* The cookie banner (assets/consent.js) in the site's colours */
-#consent { background: var(--color-card) !important; color: var(--color-text) !important; border-color: var(--color-line) !important; }
-#consent a { color: var(--color-action-text) !important; }
-#consent button[data-v='1'] { background: var(--color-action) !important; border-color: var(--color-action) !important; color: #fff !important; }
 /* The older style.css styles every footer nav as a row; the new footer has its own layout. */
 .sitefoot nav.sitefoot__col { display: block; margin: 0; }
 .sitefoot nav.langs { display: flex; margin: 0; }

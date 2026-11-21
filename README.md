@@ -1,6 +1,6 @@
 # sideline.no
 
-Static site for https://sideline.no (GitHub Pages, custom domain). Plain HTML/CSS, no build step, self-hosted fonts (Plus Jakarta Sans and Oswald, OFL, `assets/fonts/`). Since November 2026 in the design of spons.sideline.no: `assets/site.css` (the same tokens; light, dark on dark devices) and `assets/site.js` (header shadow, phone menu). The front pages are written by `tools/make_home.py` (head from `tools/home_head_{nb,en}.html`), the support and privacy pages by `tools/make_shared_pages.py`; both use the shared header and footer in `tools/site_frame.py`. Edit those and re-run, not the HTML. Google tag (Google Ads AW-18545227066) with a consent banner: `assets/consent.js`, included high in every page's `<head>` (Consent Mode v2, nothing set before Accept; only runs on sideline.no).
+Static site for https://sideline.no (GitHub Pages, custom domain). Plain HTML/CSS, no build step, self-hosted fonts (Plus Jakarta Sans and Oswald, OFL, `assets/fonts/`). Since November 2026 in the design of spons.sideline.no: `assets/site.css` (the same tokens; light, dark on dark devices) and `assets/site.js` (header shadow, phone menu). The front pages are written by `tools/make_home.py` (head from `tools/home_head_{nb,en}.html`), the support and privacy pages by `tools/make_shared_pages.py`; both use the shared header and footer in `tools/site_frame.py`. Edit those and re-run, not the HTML. No cookies, no analytics or advertising tags (the Google tag was removed on 21 November 2026).
 
 | Path | Content |
 |---|---|

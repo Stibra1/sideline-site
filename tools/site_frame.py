@@ -128,7 +128,7 @@ def footer(lang: str, here: str, there: str) -> str:
 <div class="sitefoot__brand">{logo(lang)}<p>{t['tagline']}</p></div>
 {col(t['col_spons'], spons)}
 {col(t['col_apps'], apps)}
-{col(t['col_company'], company, f'<li><a href="#" data-consent-settings>{t["cookies"]}</a></li>')}
+{col(t['col_company'], company)}
 </div>
 <div class="sitefoot__bottom">
 {langs(lang, here, there)}
